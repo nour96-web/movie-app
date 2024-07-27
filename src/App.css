@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin: 0 0 20px;
 }
 
 .App-logo {
@@ -35,4 +36,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+.App .card {
+  border: 1px solid #ccc;
+  min-height: 620px;
+}
+
+.App .card img.card-img-top {
+  max-width: 100%;
+  height: 320px;
+  object-fit: cover;
+  width: 100%;
+}
+
+
+.App .card button.btn.btn-danger {
+  position: absolute;
+  margin: 0 auto;
+  left: 20px;
+  right: 20px;
+  bottom: 30px;
+  display: table;
 }
