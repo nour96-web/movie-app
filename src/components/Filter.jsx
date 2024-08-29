@@ -1,13 +1,13 @@
 import React from 'react'
-import { Button, Container, Form, Nav, Navbar, NavDropdown } from 'react-bootstrap'
+import { Container, Form, Nav, Navbar } from 'react-bootstrap'
 import RateFiltre from './RateFiltre'
 
-const Filter = ({ search , handleSearch }) => {
+const Filter = ({ search , handleSearch, handleStar ,rateStar}) => {
   return (
     <div>
          <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
-        <Navbar.Brand href="#">Movie App</Navbar.Brand>
+        <Navbar.Brand>Movie App</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -33,7 +33,7 @@ const Filter = ({ search , handleSearch }) => {
             
           </Form>
         
-          <RateFiltre />
+          <RateFiltre handleStar={handleStar} rating={rateStar}/>
           </div>
         </Navbar.Collapse>
       </Container>

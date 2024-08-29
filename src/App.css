@@ -38,11 +38,37 @@
   }
 }
 
-
+p.guest.card-text {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 103px;
+}
+img.img-movie {
+  float: left;
+  width: 33%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+.details .bloc-right {
+  text-align: left;
+  margin-left: auto;
+  max-width: 409px;
+  margin-right: 30%;
+  padding: 120px 0;
+}
+.details {
+  position: relative;
+  margin: 30px 0;
+}
 
 .App .card {
   border: 1px solid #ccc;
-  min-height: 620px;
+  min-height: 645px;
 }
 
 .App .card img.card-img-top {
@@ -58,6 +84,19 @@
   margin: 0 auto;
   left: 20px;
   right: 20px;
-  bottom: 30px;
+  bottom: 20px;
   display: table;
+}
+
+button.btn-details.btn.btn-primary {
+  position: absolute;
+  margin: auto;
+  left: 20px;
+  right: 20px;
+  bottom: 70px;
+  display: table;
+}
+
+.card-body {
+  padding: 0 0 115px;
 }
